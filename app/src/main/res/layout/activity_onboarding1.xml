@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".onboarding1">
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="609dp"
+      android:layout_height="473dp"
+      android:layout_marginTop="4dp"
+      android:adjustViewBounds="true"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.444"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/onboading1" />
+
+  <ImageView
+      android:id="@+id/imageView6"
+      android:layout_width="430dp"
+      android:layout_height="319dp"
+      android:layout_marginTop="6dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView2"
+      app:srcCompat="@drawable/rounded_rectangle" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="56dp"
+      android:fontFamily="@font/league_spartan"
+      android:text="Find Your Favorite Events"
+      android:textColor="@color/white"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.542"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="336dp"
+      android:layout_height="64dp"
+      android:layout_marginTop="40dp"
+      android:layout_marginEnd="16dp"
+      android:fontFamily="@font/league_spartan"
+      android:text="Concerts, sports, theater, and more – explore thousands of events near you!"
+      android:textColor="@color/white"
+      android:textSize="17sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.882"
+      app:layout_constraintStart_toStartOf="@+id/imageView6"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <Button
+      android:id="@+id/btn_next"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="48dp"
+      android:layout_marginEnd="24dp"
+      android:backgroundTint="@color/ic_launcher_background"
+      android:fontFamily="@font/league_spartan"
+      android:text="Next"
+      android:textColor="@color/white"
+      android:textColorLink="@color/white"
+      android:textSize="17sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView2"
+      app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

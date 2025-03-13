@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gradient background -->
+    <gradient
+        android:angle="60"
+        android:startColor="#171766"
+        android:endColor="#171766"
+        android:type="linear"/>
+
+    <!-- Rounded top corners -->
+    <corners
+        android:topLeftRadius="120dp"
+        android:topRightRadius="120dp"/> <!-- Rounds only the top-left and top-right corners -->
+
+</shape>

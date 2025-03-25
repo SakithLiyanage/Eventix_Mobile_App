@@ -3,6 +3,7 @@ package com.example.eventixmobileapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,6 +23,32 @@ class events : AppCompatActivity() {
         bookbtn.setOnClickListener {
             // Create an Intent to start the NextActivity
             val intent = Intent(this, event_details::class.java)
+            startActivity(intent)
+        }
+        // Get reference to the ImageView (Explore)
+        val eventsnavigate: ImageView = findViewById(R.id.events2)
+
+
+        eventsnavigate.setOnClickListener {
+            val intent = Intent(this, events::class.java)
+            startActivity(intent)
+        }
+
+        // Get reference to the ImageView (profile)
+        val profilenavigate: ImageView = findViewById(R.id.profile2)
+
+
+        profilenavigate.setOnClickListener {
+            val intent = Intent(this, profile::class.java)
+            startActivity(intent)
+        }
+
+        // Get reference to the ImageView (profile)
+        val homenavigate: ImageView = findViewById(R.id.explore2)
+
+
+        profilenavigate.setOnClickListener {
+            val intent = Intent(this, home::class.java)
             startActivity(intent)
         }
 

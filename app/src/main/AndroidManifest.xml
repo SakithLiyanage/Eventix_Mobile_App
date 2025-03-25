@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EventixMobileApp"
         tools:targetApi="31">
         <activity
+            android:name=".editprofile"
+            android:exported="false" />
+        <activity
             android:name=".confirm_cancel"
             android:exported="false" />
         <activity

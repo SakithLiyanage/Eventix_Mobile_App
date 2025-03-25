@@ -3,6 +3,7 @@ package com.example.eventixmobileapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,6 +23,15 @@ class ticket : AppCompatActivity() {
         cancel_btn.setOnClickListener {
             // Navigate to the ticket page activity
             val intent = Intent(this, confirm_cancel::class.java)
+            startActivity(intent)
+        }
+
+        // Get reference to the ImageView (profile)
+        val profilenavigate: ImageView = findViewById(R.id.imageView29)
+
+
+        profilenavigate.setOnClickListener {
+            val intent = Intent(this, profile::class.java)
             startActivity(intent)
         }
 

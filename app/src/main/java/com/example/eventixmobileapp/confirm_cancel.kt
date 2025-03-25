@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,12 +20,11 @@ class confirm_cancel : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        // Delay the transition to the onboarding screen after 3000ms (3 seconds)
-        Handler(Looper.getMainLooper()).postDelayed({
+        val cancel: Button = findViewById(R.id.cancel_proceed)
+        cancel.setOnClickListener {
+            // Create an Intent to start the NextActivity
             val intent = Intent(this, profile::class.java)
             startActivity(intent)
-            // Optionally finish the current activity
-            finish()
-        }, 3000) // 3000ms delay
+        }
     }
 }

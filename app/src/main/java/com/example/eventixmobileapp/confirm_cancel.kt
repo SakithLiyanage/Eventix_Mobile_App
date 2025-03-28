@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -23,7 +24,22 @@ class confirm_cancel : AppCompatActivity() {
         val cancel: Button = findViewById(R.id.cancel_proceed)
         cancel.setOnClickListener {
             // Create an Intent to start the NextActivity
-            val intent = Intent(this, profile::class.java)
+            val intent = Intent(this, mytickets::class.java)
+            startActivity(intent)
+        }
+        val cancel_action: Button = findViewById(R.id.cancel_action)
+        cancel_action.setOnClickListener {
+            // Create an Intent to start the NextActivity
+            val intent = Intent(this, ticket::class.java)
+            startActivity(intent)
+        }
+
+
+        val backnavigate: ImageView = findViewById(R.id.back_button)
+
+
+        backnavigate.setOnClickListener {
+            val intent = Intent(this, ticket::class.java)
             startActivity(intent)
         }
     }

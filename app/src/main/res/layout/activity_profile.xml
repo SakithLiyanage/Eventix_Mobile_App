@@ -11,329 +11,400 @@
     tools:context=".home">
 
     <ScrollView
-        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="-16dp">
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="370dp"
-                android:layout_height="98dp"
-                android:layout_marginTop="230sp"
-                android:background="@color/white"
-                android:backgroundTint="@color/white"
-                android:outlineAmbientShadowColor="#000000"
-                android:outlineSpotShadowColor="#090707"
-                app:cardCornerRadius="0dp"
-                app:cardElevation="0dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.512"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="370dp"
-                android:layout_height="98dp"
-                android:layout_marginTop="130sp"
-                android:background="@color/white"
-                android:backgroundTint="@color/white"
-                android:outlineAmbientShadowColor="#000000"
-                android:outlineSpotShadowColor="#090707"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView">
-
-                <ImageView
-                    android:id="@+id/imageView21"
-                    android:layout_width="154dp"
-                    android:layout_height="99dp"
-                    app:srcCompat="@drawable/event3" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="92dp"
-                        android:fontFamily="@font/league_spartan"
-                        android:text="@string/Jaffna_Crab_Feast"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:layout_editor_absoluteY="16dp" />
-
-                    <Button
-                        android:id="@+id/ticket3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:width="400px"
-                        android:backgroundTint="@color/ic_launcher_background"
-                        android:fontFamily="@font/league_spartan"
-                        android:text="@string/View_Ticket"
-                        android:textColor="@color/white"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="@+id/textView20"
-                        app:layout_constraintTop_toBottomOf="@+id/textView20" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="370dp"
-                android:layout_height="98dp"
-                android:layout_marginTop="20sp"
-                android:background="@color/white"
-                android:backgroundTint="@color/white"
-                android:outlineAmbientShadowColor="#000000"
-                android:outlineSpotShadowColor="#090707"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView">
-
-                <ImageView
-                    android:id="@+id/imageView21"
-                    android:layout_width="154dp"
-                    android:layout_height="99dp"
-                    app:srcCompat="@drawable/event1" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="44dp"
-                        android:fontFamily="@font/league_spartan"
-                        android:text="@string/Kandy_Perahera_Experience"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:layout_editor_absoluteY="16dp" />
-
-                    <Button
-                        android:id="@+id/ticket2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:width="400px"
-                        android:backgroundTint="@color/ic_launcher_background"
-                        android:fontFamily="@font/league_spartan"
-                        android:text="@string/View_Ticket"
-                        android:textColor="@color/white"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toStartOf="@+id/textView20"
-                        app:layout_constraintTop_toBottomOf="@+id/textView20" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="370dp"
-                android:layout_height="98dp"
-                android:layout_marginTop="20sp"
-                android:background="@color/white"
-                android:backgroundTint="@color/white"
-                android:outlineAmbientShadowColor="#000000"
-                android:outlineSpotShadowColor="#090707"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/my_bookings">
-
-                <ImageView
-                    android:id="@+id/imageView21"
-                    android:layout_width="154dp"
-                    android:layout_height="99dp"
-                    app:srcCompat="@drawable/event7" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView20"
-                        android:layout_width="168dp"
-                        android:layout_height="35dp"
-                        android:layout_marginEnd="44dp"
-                        android:fontFamily="@font/league_spartan"
-                        android:text="@string/Street_Food_Carnival"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:layout_editor_absoluteY="14dp" />
-
-                    <Button
-                        android:id="@+id/ticket1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="56dp"
-                        android:width="400px"
-                        android:backgroundTint="@color/ic_launcher_background"
-                        android:fontFamily="@font/league_spartan"
-                        android:text="@string/View_Ticket"
-                        android:textColor="@color/white"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.2"
-                        app:layout_constraintStart_toStartOf="@+id/textView20"
-                        app:layout_constraintTop_toBottomOf="@+id/textView20" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/textView25"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/league_spartan"
-                android:text="@string/Sakith_Liyanage"
-                android:textColor="@color/black"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView23" />
-
-            <ImageView
-                android:id="@+id/imageView23"
-                android:layout_width="142dp"
-                android:layout_height="106dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/baseline_account_circle_24"
-                tools:layout_editor_absoluteY="75dp" />
-
-            <LinearLayout
-                android:id="@+id/linearLayout2"
+                android:id="@+id/profile_header"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"></LinearLayout>
-
-            <Button
-                android:id="@+id/my_bookings"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="@color/white"
-                android:fontFamily="@font/league_spartan"
-                android:text="@string/MY_BOOKINGS"
-                android:textColor="@color/ic_launcher_background"
-                android:textSize="15sp"
-                android:textStyle="bold"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/update_prof_btn" />
+                app:layout_constraintTop_toTopOf="parent">
 
-            <Button
-                android:id="@+id/prev_bookings"
-                android:layout_width="wrap_content"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/baseline_account_circle_24" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/league_spartan"
+                        android:text="@string/Sakith_Liyanage"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+                    <Button
+                        android:id="@+id/update_prof_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:width="180dp"
+                        android:backgroundTint="@color/secondary_color"
+                        android:fontFamily="@font/league_spartan"
+                        android:text="@string/UPDATE_PROFILE"
+                        android:textColor="@color/white"
+                        app:cornerRadius="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/settings_card"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="@color/white"
-                android:fontFamily="@font/league_spartan"
-                android:text="@string/PREVIOUS_BOOKINGS"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textStyle="bold"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.13"
-                app:layout_constraintStart_toEndOf="@+id/my_bookings"
-                app:layout_constraintTop_toBottomOf="@+id/update_prof_btn" />
-
-            <ImageView
-                android:id="@+id/logout"
-                android:layout_width="26dp"
-                android:layout_height="39dp"
-                android:layout_marginTop="28dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.838"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logout" />
+                app:layout_constraintTop_toBottomOf="@+id/profile_header">
 
-            <Button
-                android:id="@+id/update_prof_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:width="150dp"
-                android:height="10dp"
-                android:backgroundTint="@color/secondary_color"
-                android:fontFamily="@font/league_spartan"
-                android:text="@string/UPDATE_PROFILE"
-                android:textColor="@color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
+                    <LinearLayout
+                        android:id="@+id/profile_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/league_spartan"
+                            android:text="Profile"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/usernew" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F0F0F0"
+                        app:layout_constraintTop_toBottomOf="@+id/profile_row" />
+
+                    <LinearLayout
+                        android:id="@+id/privacy_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/divider1">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/league_spartan"
+                            android:text="Privacy Policy"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/insurance" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F0F0F0"
+                        app:layout_constraintTop_toBottomOf="@+id/privacy_row" />
+
+                    <LinearLayout
+                        android:id="@+id/help_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/divider2">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/league_spartan"
+                            android:text="Help"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/question" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F0F0F0"
+                        app:layout_constraintTop_toBottomOf="@+id/help_row" />
+
+                    <LinearLayout
+                        android:id="@+id/settings_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/divider3">
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/league_spartan"
+                            android:text="Settings"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/settings" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#F0F0F0"
+                        app:layout_constraintTop_toBottomOf="@+id/settings_row" />
+
+                    <LinearLayout
+                        android:id="@+id/logout_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/divider4">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/league_spartan"
+                            android:text="Log out"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/logout"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:srcCompat="@drawable/logout" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
     <LinearLayout
-        android:layout_width="410dp"
-        android:layout_height="95dp"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
         android:background="@drawable/rounded_rectangle"
+        android:elevation="8dp"
+        android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
-            android:id="@+id/explore"
-            android:layout_width="74dp"
-            android:layout_height="35dp"
-            android:layout_margin="90px"
+        <LinearLayout
+            android:id="@+id/explore_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:maxWidth="100px"
-            android:minWidth="100px"
-            app:srcCompat="@drawable/explore_icon" />
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/events"
-            android:layout_width="61dp"
-            android:layout_height="38dp"
-            android:layout_margin="90px"
-            android:layout_weight="1"
-            android:maxWidth="100px"
-            android:minWidth="100px"
-            app:srcCompat="@drawable/calendar_icon" />
+            <ImageView
+                android:id="@+id/explore"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="Explore"
+                app:srcCompat="@drawable/explore_icon" />
 
-        <ImageView
-            android:id="@+id/profile"
-            android:layout_width="56dp"
-            android:layout_height="41dp"
-            android:layout_margin="90px"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/league_spartan"
+                android:text="Explore"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/events_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:maxWidth="100px"
-            android:minWidth="100px"
-            app:srcCompat="@drawable/profile_user_active" />
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/events"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="Events"
+                app:srcCompat="@drawable/calendar_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/league_spartan"
+                android:text="Events"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ticket_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ticket"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="Tickets"
+                app:srcCompat="@drawable/ticket" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/league_spartan"
+                android:text="Tickets"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="Profile"
+                app:srcCompat="@drawable/profile_user_active" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/league_spartan"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

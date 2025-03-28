@@ -21,7 +21,7 @@ class payment_success : AppCompatActivity() {
         }
         // Delay the transition to the onboarding screen after 3000ms (3 seconds)
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, profile::class.java)
+            val intent = Intent(this, mytickets::class.java)
             startActivity(intent)
             // Optionally finish the current activity
             finish()

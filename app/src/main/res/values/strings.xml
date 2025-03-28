@@ -62,6 +62,9 @@
     <string name="user_email_placeholder">"     sakith@gmail.com"</string>
     <string name="event_desc">A night of revelry and merriment awaits you at the Fairway Colombo  Street Food Festival. Indulge in a festive atmosphere of live music,  contemporary artists and a delectable selection of local and  international cuisine that is bound to take you on a flavourful culinary adventure.</string>
     <string name="event_time">Tuesday, 4:00PM - 9:00PM</string>
-    <string name="buy_ticket">BUY TICKET LKR 1,500</string>
+    <string name="buy_ticket">BUY TICKET</string>
     <string name="event_deta">Events Details</string>
+    <string name="app_tagline">Discover Events Near You</string>
+    <string name="app_version">v1.0.0</string>
+    <string name="wel_title">Welcome to EventHub</string>
 </resources>

@@ -19,12 +19,7 @@ class profile : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val prev_events: Button = findViewById(R.id.prev_bookings)
-        prev_events.setOnClickListener {
-            // Create an Intent to start the NextActivity
-            val intent = Intent(this, previous_bookings::class.java)
-            startActivity(intent)
-        }
+
         val update_prof: Button = findViewById(R.id.update_prof_btn)
         update_prof.setOnClickListener {
             // Create an Intent to start the NextActivity
@@ -32,19 +27,39 @@ class profile : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // View Ticket button
-        val viewTicketButton: Button = findViewById(R.id.ticket1)
-        viewTicketButton.setOnClickListener {
-            // Navigate to the ticket page activity
-            val intent = Intent(this, ticket::class.java)
+        // Get reference to the ImageView (logout)
+        val logout: ImageView = findViewById(R.id.logout)
+
+
+        logout.setOnClickListener {
+            val intent = Intent(this, welcome::class.java)
             startActivity(intent)
         }
+
         // Get reference to the ImageView (Explore)
+        val explorenavigate: ImageView = findViewById(R.id.explore)
+
+
+        explorenavigate.setOnClickListener {
+            val intent = Intent(this, home::class.java)
+            startActivity(intent)
+        }
+
+        // Get reference to the ImageView (Events)
         val eventsnavigate: ImageView = findViewById(R.id.events)
 
 
         eventsnavigate.setOnClickListener {
             val intent = Intent(this, events::class.java)
+            startActivity(intent)
+        }
+
+        // Get reference to the ImageView (ticket)
+        val ticketnavigate: ImageView = findViewById(R.id.ticket)
+
+
+        ticketnavigate.setOnClickListener {
+            val intent = Intent(this, mytickets::class.java)
             startActivity(intent)
         }
 
@@ -56,23 +71,8 @@ class profile : AppCompatActivity() {
             val intent = Intent(this, profile::class.java)
             startActivity(intent)
         }
-        // Get reference to the ImageView (logout)
-        val logout: ImageView = findViewById(R.id.logout)
 
 
-        logout.setOnClickListener {
-            val intent = Intent(this, welcome::class.java)
-            startActivity(intent)
-        }
-
-        // Get reference to the ImageView (profile)
-        val homenavigate: ImageView = findViewById(R.id.explore)
-
-
-        profilenavigate.setOnClickListener {
-            val intent = Intent(this, home::class.java)
-            startActivity(intent)
-        }
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

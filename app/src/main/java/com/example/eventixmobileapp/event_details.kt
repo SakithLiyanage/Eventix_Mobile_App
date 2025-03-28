@@ -3,6 +3,7 @@ package com.example.eventixmobileapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,6 +23,14 @@ class event_details : AppCompatActivity() {
         getStartedButton.setOnClickListener {
             // Create an Intent to start the NextActivity
             val intent = Intent(this, payment::class.java)
+            startActivity(intent)
+        }
+
+        val backnavigate: ImageView = findViewById(R.id.backtoevents)
+
+
+        backnavigate.setOnClickListener {
+            val intent = Intent(this, events::class.java)
             startActivity(intent)
         }
 

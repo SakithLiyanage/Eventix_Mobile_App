@@ -31,7 +31,7 @@ class ticket : AppCompatActivity() {
 
 
         profilenavigate.setOnClickListener {
-            val intent = Intent(this, profile::class.java)
+            val intent = Intent(this, mytickets::class.java)
             startActivity(intent)
         }
 

@@ -22,7 +22,16 @@ class previous_bookings : AppCompatActivity() {
         val my_bookings: Button = findViewById(R.id.my_bookings)
         my_bookings.setOnClickListener {
             // Create an Intent to start the NextActivity
-            val intent = Intent(this, profile::class.java)
+            val intent = Intent(this, mytickets::class.java)
+            startActivity(intent)
+        }
+
+        // Get reference to the ImageView (Explore)
+        val explorenavigate: ImageView = findViewById(R.id.explore)
+
+
+        explorenavigate.setOnClickListener {
+            val intent = Intent(this, home::class.java)
             startActivity(intent)
         }
         // Get reference to the ImageView (Explore)
@@ -34,6 +43,15 @@ class previous_bookings : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Get reference to the ImageView (Explore)
+        val ticketnavigate: ImageView = findViewById(R.id.ticket)
+
+
+        ticketnavigate.setOnClickListener {
+            val intent = Intent(this, mytickets::class.java)
+            startActivity(intent)
+        }
+
         // Get reference to the ImageView (profile)
         val profilenavigate: ImageView = findViewById(R.id.profile)
 
@@ -42,15 +60,14 @@ class previous_bookings : AppCompatActivity() {
             val intent = Intent(this, profile::class.java)
             startActivity(intent)
         }
-
-        // Get reference to the ImageView (profile)
-        val homenavigate: ImageView = findViewById(R.id.explore)
-
-
-        profilenavigate.setOnClickListener {
-            val intent = Intent(this, home::class.java)
+        val prev_events: Button = findViewById(R.id.prev_bookings)
+        prev_events.setOnClickListener {
+            // Create an Intent to start the NextActivity
+            val intent = Intent(this, previous_bookings::class.java)
             startActivity(intent)
         }
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

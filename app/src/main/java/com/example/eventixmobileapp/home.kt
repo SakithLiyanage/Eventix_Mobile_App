@@ -31,6 +31,15 @@ class home : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Get reference to the ImageView (Explore)
+        val ticketnavigate: ImageView = findViewById(R.id.ticket)
+
+
+        ticketnavigate.setOnClickListener {
+            val intent = Intent(this, mytickets::class.java)
+            startActivity(intent)
+        }
+
         // Get reference to the ImageView (profile)
         val profilenavigate: ImageView = findViewById(R.id.profile)
 

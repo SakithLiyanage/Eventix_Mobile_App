@@ -9,23 +9,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class events : AppCompatActivity() {
+class mytickets : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_events)
+        setContentView(R.layout.activity_mytickets)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val bookbtn: Button = findViewById(R.id.book_btn2)
-        bookbtn.setOnClickListener {
-            // Create an Intent to start the NextActivity
-            val intent = Intent(this, event_details::class.java)
-            startActivity(intent)
-        }
-
         // Get reference to the ImageView (Explore)
         val explorenavigate: ImageView = findViewById(R.id.explore)
 
@@ -60,16 +53,19 @@ class events : AppCompatActivity() {
             val intent = Intent(this, profile::class.java)
             startActivity(intent)
         }
-
-
-
-
-
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        val prev_events: Button = findViewById(R.id.prev_bookings)
+        prev_events.setOnClickListener {
+            // Create an Intent to start the NextActivity
+            val intent = Intent(this, previous_bookings::class.java)
+            startActivity(intent)
+        }
+        // View Ticket button
+        val viewTicketButton: Button = findViewById(R.id.ticket1)
+        viewTicketButton.setOnClickListener {
+            // Navigate to the ticket page activity
+            val intent = Intent(this, ticket::class.java)
+            startActivity(intent)
         }
     }
+
 }
